@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+    padding:0;
+    margin:0;
+    background-color:white;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	opacity:0.8;
+	font-size: 50px;
+	margin: 140px 0 0 70px;
+}
+#explanation {
+    text-align: center;
+}
+
+#headerWrapper {
+	width:100%;
+	background-color:black;
+	position:fixed;
+	top:0;left:0;
+    z-index:10000;
+	height:44px;
+	padding:0;
+	border-bottom:1px solid #999;
+    box-shadow: 0px 2px 19px #aaa;
+   -o-box-shadow: 0px 2px 19px #aaa;
+   -webkit-box-shadow: 0px 2px 19px #aaa;
+   -moz-box-shadow: 0px 2px 19px #aaa;
+   
+   opacity:0.8;
+}
+
+#header {
+	margin-top:0;
+    height:44px;
+    font-size:13px;
+	margin-left:auto;
+	margin-right:auto;    
+    width:950px;
+}
+
+
+
+#intro {
+	margin-top:59px;
+}
+
+ #main {
+    /* these two margins settings are here just to ensure that jsPlumb handles
+    margins properly.*/  
+    margin-top:44px;
+    margin-left: auto;
+    position: relative;
+    font-size: 80%;
+    margin-right: auto;
+    width: 95%;
+    border: 2px dotted #456;
+    
+    height: 600px;
+    overflow: auto;
+    border-radius: 10px;
+    background-color:#eaedef;
+    overflow-x:auto;
+}
+
+.language{
+	width: 50%;
+	border: 2px dotted #456;
+	border-radius: 10px;
+	height: 100px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.language{
+	width: 50%;
+	border: 2px dotted #456;
+	border-radius: 10px;
+	height: 100px;
+	padding: 10px;
+	margin: 0 auto;
+}
+.language input{
+	height: 40px;
+	width: 99%;
+	font-size: 35px;
+	color: #bbb;
+	padding: 1px 5px 1px 5px;
+	text-align: center;
+}
+
+.end {
+	width: 70%;
+	height: 300px;
+	padding: 10px;
+	
+	margin: 0 auto;
+}
+.enjoy {
+	width: 300px;
+	height: 80px;
+	color:white;
+	background: #00880f;
+	border: 1px #00880f solid;
+	float: left;
+	margin-top: 4px;
+	opacity: 0.8;
+	font-size: 55px;
+}
+.enjoy:hover {
+	
+	background: #008e10; 
+}
+
+.computing_history{
+	display: none;
+}
+
+.accepet{
+color: green;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 30px;
+text-align: center;
+}
+
+.reject{
+color: red;
+text-transform: uppercase;
+font-weight: 700; font-size: 30px;
+text-align: center;
+}
+
+#sidebar {            
+    margin-left:auto;
+	margin-right:auto;
+    width:800px;        
+    font-size:13px;    
+}
+
+
+/* demo elements */
+
+.menu,#render, #explanation { 
+    
+	background-color:#fff;	    
+}
+
+.menu {    
+    height: 15px;
+	float:right;
+    padding-top:1em;
+    padding-bottom:0.4em;   
+    background-color: transparent;
+	margin-right:30px;
+}
+
+#render {
+	padding-top:2px;
+    margin-left:auto;
+	margin-right:auto;
+    z-index:5000;
+	margin-top:0px;  
+    text-align: center;
+    background-color:white;
+}
+
+#render ul {
+    padding-left:1em;
+}
+#render ul li {
+    list-style-type:none;
+}
+#render h5 {
+    display:inline;
+}
+
+.otherLibraries {
+    display:inline;
+}
+
+a, a:visited {
+    text-decoration:none;
+    color:#01a3c6;    
+    font-family:helvetica;
+    padding:0.3em;
+    border-radius:0.2em;
+}
+
+a:hover {
+    color:#1b911b;
+}
+
+.selected {
+	color:rgb(189,11,11) !important;
+}
+
+.window, .label { 
+    background-color:white;
+    text-align:center;
+    z-index:24;
+	cursor:pointer;
+	box-shadow: 2px 2px 19px #aaa;
+   -o-box-shadow: 2px 2px 19px #aaa;
+   -webkit-box-shadow: 2px 2px 19px #aaa;
+   -moz-box-shadow: 2px 2px 19px #aaa;
+    
+}
+path, ._jsPlumb_endpoint { cursor:pointer; }
+
+/* z index stuff. windows are at z-index 24. */
+
+._jsPlumb_connector { z-index:18; }
+._jsPlumb_endpoint { z-index:19; }
+
+._jsPlumb_overlay { 
+	z-index:20; 
+	font-size: 17px;
+	color: grey;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	border: 1px solid rgb(52, 103, 137);
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	
+}
+
+._jsPlumb_connector._jsPlumb_hover {
+    z-index:21 !important;
+}
+
+._jsPlumb_endpoint._jsPlumb_hover {
+    z-index:22 !important;
+}
+
+._jsPlumb_overlay._jsPlumb_hover {
+    z-index:23 !important;
+}
+
+/* for debugging */
+.foo {
+    border:2px solid red;
+}
+
+/* A TEST 
+._jsPlumb_element_dragging path {    
+    z-index:21 !important;
+    stroke:green;
+}
+
+._jsPlumb_endpoint._jsPlumb_element_dragging * {
+    fill:green;
+}
+
+*/
+
+/* ANOTHER TEST 
+._jsPlumb_endpoint_anchor_foo * {
+    fill:black;
+}
+
+._jsPlumb_endpoint_anchor_bar * {
+    fill:red;
+}
+*/
+
+.w { 
+	width:50px; height: 50px;
+	padding:1em;
+	position:absolute;
+	border: 1px solid black;
+	z-index: 3;
+	border-radius:50%;
+	border:1px solid #346789;
+	box-shadow: 2px 2px 19px #e0e0e0;
+	-o-box-shadow: 2px 2px 19px #e0e0e0;
+	-webkit-box-shadow: 2px 2px 19px #e0e0e0;
+	-moz-box-shadow: 2px 2px 19px #e0e0e0;
+	cursor: move;
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+	background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+}
+
+#new_state , #export {
+	width: auto;
+	height: 35px;
+	color:white;
+	background: #00880f;
+	border: 1px #00880f solid;
+	float: left;
+	margin : 4px 4px 0 4px;
+}
+#new_state:hover, #export:hover {
+	
+	background: #008e10; 
+}
+
+
+
+#zoom {
+	width: auto;
+	height: 20px;
+	color:white;
+	background: #ddd400;
+	border: 1px #ddd400 solid;
+	float: left;
+	margin-top: 22px;
+}
+#zoom :hover{
+	
+	background: #cf1223; 
+}
+
+
+#initial_state {
+	top:30px;
+	left: 30px;
+}
+
+.label{
+	width: 200px;
+	height: 30px;
+	padding: 10px;
+	background: red;
+	position: relative;
+	display: none;
+}
+
+.state-label{
+	cursor: text;
+}
+.aLabel {
+	background-color:white;
+	opacity:0.8;
+	padding:0.3em;				
+}
+
+.ep {
+	float:right;
+	width:1em;
+	height:1em;
+	background-color:#994466;
+	cursor:pointer;
+}
+
+._jsPlumb_endpoint {
+	z-index:3;
+}
+
+
+.dragHover { border:1px dotted red; }
+
+path { cursor:pointer; }
