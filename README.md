@@ -5,7 +5,7 @@ This is a project to learn Computer Theory, graphs and javascript.
 
 Special thanks to <http://jsplumbtoolkit.com/home/jquery.html>
 
-###Live Demo <http://turing.luizanao.com>
+###Live Demo <http://turing.luizanao.com> (offline now :( )
 
 Next Releases:
 
