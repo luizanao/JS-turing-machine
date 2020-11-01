@@ -1,17 +1,10 @@
-#JS turing Machine
-###Using JsPlump
+# JS turing-like Machine
 
-This is a project to learn Computer Theory, graphs and javascript.
+This was a project made to learn Computer Theory, graphs and javascript.
 
-Special thanks to <http://jsplumbtoolkit.com/home/jquery.html>
+Special thanks to [jsplumbtoolkit](http://jsplumbtoolkit.com/home/jquery.html)
 
-###Live Demo <http://turing.luizanao.com> (offline now :( )
 
-Next Releases:
-
-- Fix alert bug
-- Fix set final state bug
-- Force download - Export to JFlap (implemented just call)
 
 
 ##How to use:
