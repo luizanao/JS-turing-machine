@@ -7,7 +7,7 @@ Special thanks to [jsplumbtoolkit](http://jsplumbtoolkit.com/home/jquery.html)
 
 
 
-##How to use:
+## How to use:
 
 - Create a new states
 	- Text click to change Label
